@@ -5,7 +5,7 @@ It is important to understand alt text VS longer use of descriptions, aria-detai
 
 
 ## Rendered View of Demo
-[Extended Descriptions Demo](https://diagram-codesprint.github.io/)
+[Extended Descriptions Demo](https://diagram-codesprint.github.io/2018-enhanced-visual-desc/)
 
 ## Slack Channel
 Here is a [link to the Slack Channel](https://diagram2018codesprint.slack.com/messages/CAQHTU201).
