@@ -1,5 +1,11 @@
+## Background
+It is important to understand alt text VS longer use of descriptions, aria-details, and examine some samples of this in the wild. In a perfect world, an open source implementation of what can be found on the MCA's website would be ideal.
+
+[https://www.mcachicago.org](https://www.mcachicago.org)
+
+
 ## Rendered View of Demo
-[Extended Descriptions Demo](https://benetech.github.io/DIAGRAM-Code-Sprint-2018/Projects/Extended-Descriptions/)
+[Extended Descriptions Demo](https://diagram-codesprint.github.io/)
 
 ## Slack Channel
 Here is a [link to the Slack Channel](https://diagram2018codesprint.slack.com/messages/CAQHTU201).
