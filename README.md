@@ -1,3 +1,5 @@
+# 2018 Enhanced Visual Descriptions 
+
 ## Background
 It is important to understand alt text VS longer use of descriptions, aria-details, and examine some samples of this in the wild. In a perfect world, an open source implementation of what can be found on the MCA's website would be ideal.
 
