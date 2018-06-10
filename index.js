@@ -46,6 +46,12 @@ class ExtendedDescription {
 
 		this.setShort();
 		this.initListeners();
+		if (!this.hasLongdesc) {
+			const noLongDesc = document.createElement('div');
+			noLongDesc.className = 'sr-only';
+			noLongDesc.textContent = 'No long description available';
+			this.summary.appendChild(noLongDesc);
+		}
 	}
 
 	get img() {
@@ -80,6 +86,10 @@ class ExtendedDescription {
 
 	get description() {
 		return this.figure.querySelector(this.config.descSelector);
+	}
+
+	get hasLongdesc() {
+		return this.description.querySelector('dl').children.length > 1;
 	}
 
 	get pos() {
