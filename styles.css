@@ -54,6 +54,7 @@ main {
     cursor: pointer;
 }
 
+/* when using a mouse, show the summary on figure-hover (hide by default) */
 @media (pointer:fine) {
     .ext-summary {
         color: transparent;
