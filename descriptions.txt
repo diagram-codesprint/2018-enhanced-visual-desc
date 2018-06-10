@@ -1,0 +1,21 @@
+cereal_light.jpeg
+
+Alt="Photo: Person mixing cereal, milk and strawberry jam, in white ceramic bowl"
+
+cave_dark.jpeg
+Alt="Photo of man standing on rock at enterance to cave near shore"
+
+
+Blastulation.png
+Alt="Two layers of the ball shaped blastocyst. The outer layer is the trophoblast. Inside the blastocystcavity is the inner cell mass (embryoblast)."
+
+Extended Description:
+<ul>
+<li>
+The blastocyst consists of an outer layer of cells called the trophoblast, a fluid-filled cavity, and an inner cell mass called the embryoblast.
+</li>
+<li>
+Further information about this "Blastocyst" image is <a href="http://en.wikipedia.org/wiki/Image:Blastocyst.png" target="_BLANK">available at Wikipedia</a> (GNU Free Documentation License).
+</li>
+</ul>
+
