@@ -14,18 +14,26 @@
 <body>
   <main>
     <figure class="ext-figure"> <img src="images/cave_dark.jpeg" alt="Photo of man standing on rock at entrance to cave near shore" aria-details="ext1" />
-      <details class="ext-details" id="ext1">
+     <details class="ext-details" id="ext1">
+        <!-- a summary element will be added in JavaScript -->
         <div class="ext-description">
           <dl>
+            <!-- the .ext-short's parent element will be set to aria-hidden if
+                 the parent has the 'ext-desc-item' class -->
             <div class="ext-desc-item">
               <dt>Short Description</dt>
+
               <dd class="ext-short">Photo of man standing on rock at entrance to cave near shore</dd>
+              <!-- if the .ext-short does not have a parent .ext-desc-item, it
+                   will be aria-hidden -->
+              <dd class="ext-short"><!-- the image's alt text will be copied here --></dd>
             </div>
           </dl>
         </div>
       </details>
     </figure>
-    <figure class="ext-figure"> <img src="images/cereal_light.jpeg" alt="Photo: Person mixing cereal, milk and strawberry jam, in white ceramic bowl" aria-details="ext2" />
+    <figure class="ext-figure">
+      <img src="images/cereal_light.jpeg" alt="Photo: Person mixing cereal, milk and strawberry jam, in white ceramic bowl" aria-details="ext2" />
       <details class="ext-details" id="ext2">
         <summary class="ext-summary" aria-describedby="i2">
           <span class="fas fa-universal-access" aria-hidden="true"></span>
@@ -41,7 +49,8 @@
         </div>
       </details>
     </figure>
-    <figure class="ext-figure" style="width: 270px;"> <img src="images/Blastocyst.png" alt="The morula (1) continues to undergo cell divisions. As it does, cells start to migrate into separate layers, and a cavity starts to develop inside the ball of cells. When cells have migrated into distinct layers, the organism is called a blastocyst (2)" aria-details="ext3" />
+    <figure class="ext-figure" style="width: 270px;">
+      <img src="images/Blastocyst.png" alt="The morula (1) continues to undergo cell divisions. As it does, cells start to migrate into separate layers, and a cavity starts to develop inside the ball of cells. When cells have migrated into distinct layers, the organism is called a blastocyst (2)" aria-details="ext3" />
       <details class="ext-details" id="ext3">
         <summary class="ext-summary" aria-describedby="i3">
           <span class="fas fa-universal-access" aria-hidden="true"></span>
@@ -61,9 +70,13 @@
         </div>
       </details>
     </figure>
-    <figure class="ext-figure" style="width: 320px;"> <img src="images/Blastulation.png" alt="Two layers of the ball shaped blastocyst. The outer layer is the trophoblast. Inside the blastocystcavity is the inner cell mass (embryoblast)." aria-details="ext4" />
+    <figure class="ext-figure" style="width: 320px;">
+      <img src="images/Blastulation.png" alt="Two layers of the ball shaped blastocyst. The outer layer is the trophoblast. Inside the blastocystcavity is the inner cell mass (embryoblast)." aria-details="ext4" />
       <details class="ext-details" id="ext4">
-        <summary class="ext-summary" aria-describedby="i4"> <span class="fas fa-universal-access" aria-hidden="true"></span> <span class="sr-only">More information</span> </summary>
+        <summary class="ext-summary" aria-describedby="i4">
+          <span class="fas fa-universal-access" aria-hidden="true"></span>
+          <span class="sr-only">More information</span>
+        </summary>
         <div class="ext-description">
           <dl role="presentation">
             <div class="ext-desc-item">
