@@ -102,7 +102,9 @@ class ExtendedDescription {
 		const short = this.figure.querySelector('.ext-short');
 		short.id = `desc-${this.index}`;
 		short.textContent = this.img.getAttribute('alt');
-		short.setAttribute('aria-hidden', true);
+		const hideItem = (short.parentElement.classList.contains('ext-desc-item')) ?
+			short.parentElement : short;
+		hideItem.setAttribute('aria-hidden', true);
 	}
 
 	initListeners() {
