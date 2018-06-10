@@ -40,6 +40,7 @@ function getDefaultConfig(index) {
 class ExtendedDescription {
 	constructor(figure, index, config) {
 		this.figure = figure;
+		this.index = index;
 		this.config = Object.assign({}, getDefaultConfig(index), config);
 		this.summary = this.config.summary;
 
@@ -99,6 +100,7 @@ class ExtendedDescription {
 
 	setShort() {
 		const short = this.figure.querySelector('.ext-short');
+		short.id = `desc-${this.index}`;
 		short.textContent = this.img.getAttribute('alt');
 		short.setAttribute('aria-hidden', true);
 	}
