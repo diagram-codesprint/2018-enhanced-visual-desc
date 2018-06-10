@@ -7,17 +7,6 @@ main {
     position: relative;
 }
 
-@media (pointer:fine), (min-width: 600px) {
-    .ext-figure:hover .ext-summary {
-        color: white;
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-    .ext-figure:hover .ext-details[open] .ext-summary {
-        color: black;
-        background-color: transparent;
-    }
-}
-
 .ext-figure img {
     display: block;
     margin: 0 auto;
@@ -55,7 +44,9 @@ main {
 
 .ext-summary {
     display: block;
-    color: transparent;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 1.25rem;
     line-height: 1;
     padding: 0.5em;
     top: 0;
@@ -63,8 +54,20 @@ main {
     cursor: pointer;
 }
 
+@media (pointer:fine) {
+    .ext-summary {
+        color: transparent;
+        background-color: transparent;
+    }
+    .ext-figure:hover .ext-summary {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+
 .ext-details[open] .ext-summary {
     color: #000;
+    background-color: transparent;
     z-index: 1000;
 }
 
