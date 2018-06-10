@@ -1,5 +1,8 @@
 # 2018 Enhanced Visual Descriptions 
 
+## Demo Rendered View
+[Demo extended descriptions universal design](https://diagram-codesprint.github.io/2018-embedded-image-descs/)
+
 ## Background
 It is important to understand alt text VS longer use of descriptions, aria-details, and examine some samples of this in the wild. In a perfect world, an open source implementation of what can be found on the MCA's website would be ideal.
 
