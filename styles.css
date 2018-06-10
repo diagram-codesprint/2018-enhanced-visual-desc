@@ -45,6 +45,7 @@ main {
     top: 0;
     height: 100%;
     overflow-y: visible;
+    z-index: 1050;
 }
 
 .ext-details:not(.dragging) {
