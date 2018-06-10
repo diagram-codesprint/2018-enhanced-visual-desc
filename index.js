@@ -1,4 +1,3 @@
 window.addEventListener("load", function(){
-    
-    alert("bang");
+    console.log("blank for now");
 });
