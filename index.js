@@ -113,10 +113,16 @@ class ExtendedDescription {
 		this.description.addEventListener('mousedown', this.startDrag.bind(this));
 		document.addEventListener('mouseup', this.endDrag.bind(this));
 		document.addEventListener('mousemove', this.drag.bind(this));
+
+		this.description.addEventListener('touchstart', this.startDrag.bind(this));
+		document.addEventListener('touchend', this.endDrag.bind(this));
+		document.addEventListener('touchmove', this.drag.bind(this));
 	}
 
 	startDrag(e) {
 		this.details.classList.add('dragging');
+		const { screenY, screenX } = ('touches' in e) ? e.touches[0] : e;
+		this.prevPos = { screenY, screenX };
 	}
 
 	endDrag() {
@@ -125,10 +131,12 @@ class ExtendedDescription {
 
 	drag(e) {
 		if (this.dragging) {
+			const { screenY, screenX } = ('touches' in e) ? e.touches[0] : e;
 			this.pos = {
-				top: this.pos.top + e.movementY,
-				left: this.pos.left + e.movementX,
+				top: this.pos.top + (screenY - this.prevPos.screenY),
+				left: this.pos.left + (screenX - this.prevPos.screenX),
 			};
+			this.prevPos = { screenY, screenX };
 		}
 	}
 
