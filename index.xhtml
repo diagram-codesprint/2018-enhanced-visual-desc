@@ -11,52 +11,59 @@
 </head>
 
 <body>
-  <div class="ext-image-container">
-    <img src="images/cave_dark.jpeg" alt="Photo of man standing on rock at enterance to cave near shore"/>
-    <details class="extended-description">
-      <summary aria-label="More information" aria-describedby="i1">
-        <img src="images/universal.png" alt=""/>
-      </summary>
-      <ul>
-        <li aria-hidden="true">
-          <p id="i1">Photo of man standing on rock at enterance to cave near shore</p>
-        </li>
-      </ul>
-    </details>
-  </div>
-  
-  <div class="ext-image-container">
-    <img src="images/cereal_light.jpeg" alt="Photo: Person mixing cereal, milk and strawberry jam, in white ceramic bowl"/>
-    <details class="extended-description">
-      <summary aria-label="More information" aria-describedby="i2">
-        <img src="images/universal.png" alt=""/>
-      </summary>
-      <ul>
-        <li aria-hidden="true">
-          <p id="i2">Photo: Person mixing cereal, milk and strawberry jam, in white ceramic bowl</p>
-        </li>
-      </ul>
-    </details>
-  </div>
-  
-  <div class="ext-image-container">
-    <img src="images/Blastulation.png" alt="Two layers of the ball shaped blastocyst. The outer layer is the trophoblast. Inside the blastocystcavity is the inner cell mass (embryoblast)."/>
-    <details class="extended-description">
-      <summary aria-label="More information" aria-describedby="i3">
-        <img src="images/universal.png" alt=""/>
-      </summary>
-      <ul>
-        <li aria-hidden="true">
-          <p id="i3">Two layers of the ball shaped blastocyst. The outer layer is the trophoblast. Inside the blastocystcavity is the inner cell mass (embryoblast).</p>
-        </li>
-        <li>
-          The blastocyst consists of an outer layer of cells called the trophoblast, a fluid-filled cavity, and an inner cell mass called the embryoblast.
-        </li>
-        <li>
-          Further information about this "Blastocyst" image is <a href="http://en.wikipedia.org/wiki/Image:Blastocyst.png" target="_BLANK">available at Wikipedia</a> (GNU Free Documentation License).
-        </li>
-      </ul>
-    </details>
-  </div>
+  <main>
+    <figure class="ext-figure">
+      <img src="images/cave_dark.jpeg" alt="Photo of man standing on rock at enterance to cave near shore"/>
+      <details class="ext-details">
+        <div class="ext-description">
+          <ul>
+            <li>
+              <p class="ext-short">Photo of man standing on rock at enterance to cave near shore</p>
+            </li>
+          </ul>
+        </div>
+      </details>
+    </figure>
+
+    <figure class="ext-figure">
+      <img src="images/cereal_light.jpeg" alt="Photo: Person mixing cereal, milk and strawberry jam, in white ceramic bowl"/>
+      <details class="ext-details">
+        <summary class="ext-summary" aria-describedby="i2">
+          <span class="fas fa-universal-access" aria-hidden="true"></span>
+          <span class="sr-only">More information</span>
+        </summary>
+        <div class="ext-description">
+          <ul>
+            <li aria-hidden="true">
+              <p class="ext-short">Photo: Person mixing cereal, milk and strawberry jam, in white ceramic bowl</p>
+            </li>
+          </ul>
+        </div>
+      </details>
+    </figure>
+
+    <figure class="ext-figure" style="width: 320px;">
+      <img src="images/Blastulation.png" alt="Two layers of the ball shaped blastocyst. The outer layer is the trophoblast. Inside the blastocystcavity is the inner cell mass (embryoblast)."/>
+      <details class="ext-details">
+        <summary class="ext-summary" aria-describedby="i3">
+          <span class="fas fa-universal-access" aria-hidden="true"></span>
+          <span class="sr-only">More information</span>
+        </summary>
+        <div class="ext-description">
+          <ul>
+            <li aria-hidden="true">
+              <p class="ext-short">Two layers of the ball shaped blastocyst. The outer layer is the trophoblast. Inside the blastocystcavity is the inner cell mass (embryoblast).</p>
+            </li>
+            <li>
+              The blastocyst consists of an outer layer of cells called the trophoblast, a fluid-filled cavity, and an inner cell mass called the embryoblast.
+            </li>
+            <li>
+              Further information about this "Blastocyst" image is <a href="http://en.wikipedia.org/wiki/Image:Blastocyst.png" target="_BLANK">available at Wikipedia</a> (GNU Free Documentation License).
+            </li>
+          </ul>
+        </div>
+      </details>
+    </figure>
+  </main>
 </body>
 </html>
